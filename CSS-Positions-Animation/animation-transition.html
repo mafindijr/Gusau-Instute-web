@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition & Animations</title>
+    <style>
+        button {
+        background-color: royalblue;
+        padding: 15px 30px;
+        border: none;
+        cursor: pointer;
+        transition: 0.5s;
+        }
+
+        button:hover {
+            background-color: navy;
+            transform: scale(1.1);
+        }
+
+        .card {
+            width: 200px;
+            height: 400px;
+            background: navajowhite;
+            transition: transform 0.4s, box-shadow 0.4s;
+            
+            
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transform: rotate(50deg);
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+
+    </div>
+    
+    <button>
+        Submit
+    </button>
+</body>
+</html>

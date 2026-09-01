@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            display: block;
+            justify-content: center;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            background: #000;
+            color: white;
+            position: fixed;
+            z-index: 10;
+            width: 100%;
+            height: auto;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        div {
+            width: 400px;
+            height: 600px;
+            background: #000;
+            color: white;
+            position: relative;
+
+        }
+
+        .absolute-div {
+            margin-left: -50px;
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background: #542d2d;
+            position: absolute;
+            top: 0;
+        }
+
+        .sticky-div {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background: #542d2d;
+            right: 0;
+            top: 0;
+            left: 150px;
+            position: sticky;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>services</li>
+        </ul>
+    </nav>
+    <div>
+        <h1>CSS Position</h1>
+        <h1>CSS Position</h1>
+        <h1>CSS Position</h1>
+        <h1>CSS Position</h1>
+        <h1>CSS Position</h1>
+        <div class="absolute-div">
+
+        </div>
+    </div>
+    <div>
+        <h1>CSS Position</h1>
+        <div class="absolute-div">
+
+        </div>
+    </div>
+    <div>
+        <h1>CSS Position</h1>
+        <div class="sticky-div">
+
+        </div>
+        <div class="absolute-div">
+
+        </div>
+    </div>
+    <div>
+        <h1>CSS Position</h1>
+        <div class="absolute-div">
+
+        </div>
+    </div>
+</body>
+</html>
