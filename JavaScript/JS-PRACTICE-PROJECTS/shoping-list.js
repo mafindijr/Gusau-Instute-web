@@ -31,11 +31,11 @@ addProduct('Eggs', '500');
 function calculateTotal () {
     
     let total = 0;
-    
+
     // assigment - fix this loop to calculate the total price of the items before updating the total variable
 
     for(const product of shoppingList) {
-        total += product.price;
+        total += Number(product.price);
     };
 
     return total;

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javasctipt DOM & Events</title>
+</head>
+<body>
+
+    <h1 id="title">Hello World</h1>
+
+    <p class="description">
+        welcome to my page.
+    </p>
+
+    <script>
+
+        // getElementById() - document get or target or locate html element by its ID
+        // const title = document.getElementById("title");
+
+        // console.log(title);
+
+        // querySelector() - uses CSS selectors
+
+        const title = document.querySelector('#title');
+
+        const description = document.querySelector('.description');
+
+        console.log(title, description);
+
+        title.textContent = "Welcome to javascript";
+
+        description.innerHTML = "<b>Abdul software engineer<b>";
+
+        // document.querySelector('#title').textContent = "Welcome to javascript";
+
+
+
+
+    </script>
+</body>
+</html>
