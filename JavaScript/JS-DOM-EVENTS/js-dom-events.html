@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javasctipt DOM & Events</title>
+    <style>
+        #title {
+            color: red;
+        }
+
+        .highlight {
+            color: red;
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body>
 
@@ -12,6 +22,10 @@
     <p class="description">
         welcome to my page.
     </p>
+
+    <div id="container"></div>
+
+    <p id="message">helooooooo</p>
 
     <script>
 
@@ -22,21 +36,59 @@
 
         // querySelector() - uses CSS selectors
 
-        const title = document.querySelector('#title');
+        // const title = document.querySelector('#title');
 
-        const description = document.querySelector('.description');
+        // const description = document.querySelector('.description');
 
-        console.log(title, description);
+        // console.log(title, description);
 
-        title.textContent = "Welcome to javascript";
+        // title.textContent = "Welcome to javascript";
 
-        description.innerHTML = "<b>Abdul software engineer<b>";
+        // description.innerHTML = "<b>Abdul software engineer<b>";
 
         // document.querySelector('#title').textContent = "Welcome to javascript";
 
+            // Changing CSS style with Javascript
 
+        // const title = document.getElementById('title');
 
+        // // title.style.color = "blue";
 
+        // title.classList.add('highlight');
+        // title.classList.remove('highlight');
+        // title.classList.toggle('highlight');
+
+        //we can create a new elements
+         
+        // const paragraph = document.createElement('p');
+        // //<p></p>
+
+        // paragraph.textContent = "This paragraph was created with javascript";
+
+        // document.body.append(paragraph);
+
+        // const element = document.createElement('div');
+
+        // element.textContent = "hello Web dev";
+        // // element.style.padding = "300px 400px ";
+
+        // // element.style.border = '2px solid black';
+
+        // document.body.append(element);
+
+        // creating element inside a container
+
+            const container = document.querySelector('#container');
+
+            const paragraph = document.createElement('p');
+
+            paragraph.textContent = "New Paragraph";
+
+            container.append(paragraph);
+
+            const message = document.querySelector('#message');
+
+            message.remove();
     </script>
 </body>
 </html>

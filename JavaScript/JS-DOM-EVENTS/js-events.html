@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Event</title>
+</head>
+<body>
+
+    <button id="button">Click me</button>
+
+    <button class="btn">Change text</button>
+
+    <h1 id="title">Original text</h1>
+
+    <input id="nameInput" type="text">
+
+    <p id="output"></p>
+    
+    <script>
+        // an event is something  that happens in the browser
+        //like - click, typing, submit form and others
+
+        // code example
+        // element.addEventListener("event", function);
+
+        const button = document.querySelector('#button');
+
+        button.addEventListener('click', () => console.log("button clicked"));
+
+        // Click Event - fires when user clicks something on the page
+
+        const button2 = document.querySelector('.btn');
+
+        const title = document.querySelector('#title');
+        
+        button2.addEventListener('click', () => {
+            title.textContent = "Text Changed";
+        });
+
+        // INPUT Events - event fires whenever the user types changes the value of an input
+
+        const input = document.querySelector('#nameInput');
+
+        const output = document.querySelector('#output');
+        
+
+        input.addEventListener('input', () => { output.textContent = input.value;});
+
+    </script>
+</body>
+</html>
