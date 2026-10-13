@@ -104,10 +104,57 @@
 // console.log(original);
 // console.log(copied);
 
-const student = {
-    name: 'abdul',
-    age: 24
-};
+// const student = {
+//     name: 'abdul',
+//     age: 24,
+//     course: 'computer'
+// };
+
+// const updateStudent = {
+//     ...student,
+//     age: 25
+// }
+
+// console.log(updateStudent);
 
 
+// Rest Operator
 
+// function add(a, b, c){
+//     return a + b +c;
+// }
+
+// console.log(add(10, 20, 30));
+
+// function addNum(...number){
+//     return number.reduce((total, number) => total + number, 0);
+// }
+
+// console.log(addNum(10, 20, 30));
+// console.log(addNum(10, 20, 30, 40, 50));
+
+
+// function introduceTeam(leader, ...members) {
+//     console.log('Team lead', leader);
+//     console.log('Team members', members);
+// }
+
+// introduceTeam('Abdul', 'ahmad', 'al amin', 'ismail');
+
+// const student = {
+//      name: 'abdul',
+//     age: 24,
+//     course: 'computer',
+//     state: 'taraba'
+// }
+
+// const {name, ...otherDetails } = student;
+
+// console.log(name);
+// console.log(otherDetails);
+
+function greet(name) {
+    console.log(`hello, ${name}`);
+}
+
+greet('musa');
